@@ -1,0 +1,2 @@
+l = [1, 2, 'hello', 'world'] # 列表中同时含有int和string类型的元素
+tup = ('jason', 22) # 元组中同时含有int和string类型的元素
