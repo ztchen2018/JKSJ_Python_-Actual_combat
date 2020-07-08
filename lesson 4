@@ -1,3 +1,4 @@
+#lesson 04
 #字典和集合基础
 d1 = {'name': 'jason', 'age': 20, 'gender': 'male'}
 d2 = dict({'name': 'jason', 'age': 20, 'gender': 'male'})
@@ -71,21 +72,8 @@ print('number of unique price is {}'.format(find_unique_price_using_set(products
 
 
 
-	
+#coding=gbk	
 #初始化了含有 100,000 个元素的产品，并分别计算了使用列表和集合来统计产品价格数量的运行时间
-import time
-id = [x for x in range(0,100000)]
-price = [x for x in range(200000,300000)]
-products = list(zip(id,price))
-stat_using_list = time.perf_counter()
-find_unique_price_using_list(products)
-end_using_list = time.perf_counter()
-print("time elasp using list is:{}".format(end_using_list - stat_using_list))
-
-
-
-
-
 import time
 id = [x for x in range(0,100000)]
 price = [x for x in range(200000,300000)]
@@ -100,3 +88,6 @@ stat_using_set = time.perf_counter()
 find_unique_price_using_set(products)
 end_using_set = time.perf_counter()
 print('set time is {}'.format(end_using_set - stat_using_set))
+#输出
+#list time is 155.36729795600002
+#set time is 0.022356752000007418
