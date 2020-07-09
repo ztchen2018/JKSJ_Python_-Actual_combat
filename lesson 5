@@ -48,18 +48,6 @@ namespace = path.split('//')[1].split('/')[0] #返回 abs
 table = path.split('//')[1].split('/')[1] #返回 training_table
 data = query_data(namespace,table)
 
-
-#split
-def query_data(namespace,table):
-    """
-    given namespace and table,query database to get corresponding data
-    """
-
-path = 'hive://abs/training_table'
-namespace = path.split('//')[1].split('/')[0] #返回 abs
-table = path.split('//')[1].split('/')[1] #返回 training_table
-data = query_data(namespace,table)
-
 #string.find(sub, start, end)
 #string.strip(str)，表示去掉首尾的 str 字符串；
 #string.lstrip(str)，表示只去掉开头的 str 字符串；
