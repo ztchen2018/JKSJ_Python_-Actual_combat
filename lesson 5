@@ -61,6 +61,15 @@ table = path.split('//')[1].split('/')[1] #返回 training_table
 data = query_data(namespace,table)
 
 
+#string.strip(str)，表示去掉首尾的 str 字符串；
+#string.lstrip(str)，表示只去掉开头的 str 字符串；
+#string.rstrip(str)，表示只去掉尾部的 str 字符串。
+s = ' my name is jason '
+s.strip()
+#输出
+#'my name is jason'
+
+
 #格式化输出
 print('no data available for person with id:{},name:{}'.format(id,name))
 #输出
