@@ -1,1 +1,68 @@
 #lesson 5
+
+#字符串切片
+name = 'jason'
+print(name[1:3])
+#输出
+#as
+
+#字符串遍历
+name = 'jasoon'
+for char in name:
+    print(char)
+
+#数值遍历
+for x in range(10):
+    print(x)
+    
+
+#字符串不可改变
+s = 'hello'
+s = 'H'+ s[1:]
+s = s.replace('h','H')
+print(s)
+
+
+s = ''
+for n in range(0,10):
+    s += str(n)
+print(s)
+
+
+#使用内置函数连接字符 join
+l = []
+for n in range(0, 100):
+    l.append(str(n))
+l =' '.join(l) 
+print(l)
+
+
+#split
+def query_data(namespace,table):
+    """
+    given namespace and table,query database to get corresponding data
+    """
+
+path = 'hive://abs/training_table'
+namespace = path.split('//')[1].split('/')[0] #返回 abs
+table = path.split('//')[1].split('/')[1] #返回 training_table
+data = query_data(namespace,table)
+
+
+#split
+def query_data(namespace,table):
+    """
+    given namespace and table,query database to get corresponding data
+    """
+
+path = 'hive://abs/training_table'
+namespace = path.split('//')[1].split('/')[0] #返回 abs
+table = path.split('//')[1].split('/')[1] #返回 training_table
+data = query_data(namespace,table)
+
+
+#格式化输出
+print('no data available for person with id:{},name:{}'.format(id,name))
+#输出
+#no data available for person with id:<built-in function id>,name:jason
+
